@@ -3,6 +3,7 @@ class StringManager {
   // error handler
   static const String strBadRequestError = "BadRequest Error";
   static const String strNoContent = "No Content";
+  static const String loading = "loading";
   static const String strForbiddenError = "Forbidden Error";
   static const String strUnauthorizedError = "Unauthorized Error";
   static const String strNotFoundError = "Not Found Error";

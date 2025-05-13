@@ -63,6 +63,6 @@ class LoginPageController extends GetxController {
   }
 
   languageOnTap() {
-    HelperWidget.languageDialgo("auth");
+    // HelperWidget.languageDialgo("auth");
   }
 }
