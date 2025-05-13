@@ -3,8 +3,6 @@ import 'package:ngpiteapp/app/services/local_storage/cache_services_with_sharedp
 import 'package:ngpiteapp/data/enums/app_state_enum.dart';
 import 'package:ngpiteapp/data/repositories/users_repositories.dart';
 import 'package:ngpiteapp/data/enums/loading_state_enum.dart';
-import 'package:ngpiteapp/screens/login_page/login_page.dart';
-import 'package:ngpiteapp/screens/login_page/login_page_logic.dart';
 
 class StartPageBinging extends Bindings {
   @override
@@ -21,27 +19,7 @@ class StartPageController extends GetxController {
   var appState = AppState.run.obs;
 
   startApp() async {
-    if (await cache.getUserToken() == null) {
-      Get.off(() => LoginPage(), binding: LoginPageBinding());
-    } else {
-      await checkToken();
-    }
+   
   }
 
-  checkToken() async {
-    loadingState.value = LoadingState.loading;
-    final response = await AuthRepositories.checkToken();
-    if (response.success) {
-      if (response.data == "authenticated") {
-        // Go Home
-      } else {
-        Get.off(() => LoginPage(), binding: LoginPageBinding());
-      }
-    } else {
-      if (response.networkFailure!.code == 401)
-        Get.off(() => LoginPage(), binding: LoginPageBinding());
-
-      loadingState.value = LoadingState.hasError;
-    }
-  }
 }
