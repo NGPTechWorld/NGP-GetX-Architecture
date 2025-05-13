@@ -1,10 +1,10 @@
 // import 'package:flutter/material.dart';
 // import 'package:get/get.dart';
-// import 'package:ngpiteapp/app/config/color_manager.dart';
-// import 'package:ngpiteapp/app/config/string_manager.dart';
-// import 'package:ngpiteapp/app/config/style_manager.dart';
-// import 'package:ngpiteapp/screens/curved_navigation_bar/curved_navigation_bar_custom.dart';
-// import 'package:ngpiteapp/screens/curved_navigation_bar/curved_navigation_bar_logic.dart';
+// import '../app/config/color_manager.dart';
+// import '../app/config/string_manager.dart';
+// import '../app/config/style_manager.dart';
+// import '../screens/curved_navigation_bar/curved_navigation_bar_custom.dart';
+// import '../screens/curved_navigation_bar/curved_navigation_bar_logic.dart';
 
 // class HelperWidget {
 //   static void languageDialgo(String page) {

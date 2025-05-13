@@ -2,14 +2,13 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 
-import 'package:ngpiteapp/app/config/color_manager.dart';
-import 'package:ngpiteapp/app/config/style_manager.dart';
-import 'package:ngpiteapp/app/config/values_manager.dart';
+import '../../app/config/color_manager.dart';
+import '../../app/config/style_manager.dart';
+import '../../app/config/values_manager.dart';
 
 class PininputCustom extends StatefulWidget {
   final TextEditingController controller;
-  const PininputCustom(
-      {super.key, required this.controller});
+  const PininputCustom({super.key, required this.controller});
   @override
   State<PininputCustom> createState() => _PininputCustomState();
 }

@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ngpiteapp/app/config/values_manager.dart';
+import '../../app/config/values_manager.dart';
 import 'package:shimmer/shimmer.dart';
 
 class ShimmerPlaceholder extends StatelessWidget {
   final double height, width, padding;
   const ShimmerPlaceholder(
-      {super.key, required this.height, required this.width, this.padding = 10.0});
+      {super.key,
+      required this.height,
+      required this.width,
+      this.padding = 10.0});
   @override
   Widget build(BuildContext context) {
     return Shimmer.fromColors(

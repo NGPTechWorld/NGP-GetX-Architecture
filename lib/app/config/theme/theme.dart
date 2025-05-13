@@ -2,7 +2,7 @@
 
 import "package:flutter/material.dart";
 
-class ThemeManager {
+class AppTheme {
   // final TextTheme textTheme;
 
   bool isDark = false;
@@ -10,7 +10,7 @@ class ThemeManager {
   final LightBlueColors _lightBlueColors = LightBlueColors();
   final DarkBlueColors _darkBlueColors = DarkBlueColors();
 
-  ThemeManager();
+  AppTheme();
 
   //! Light Mode:
   //! here we put the light colors for the app
@@ -131,45 +131,44 @@ class ThemeManager {
   // ================================================
 
   ThemeData _theme(ColorScheme colorScheme) => ThemeData(
-        useMaterial3: true,
-        brightness: colorScheme.brightness,
-        colorScheme: colorScheme,
-        // textTheme: textTheme.apply(
-        //   bodyColor: colorScheme.onSurface,
-        //   displayColor: colorScheme.onSurface,
-        // ),
-        scaffoldBackgroundColor: colorScheme.surface,
-        canvasColor: colorScheme.surface,
-        // fontFamily: GoogleFonts.cairo().fontFamily,
-        fontFamily: 'Cairo',
-        inputDecorationTheme: InputDecorationTheme(
-          filled: true,
-          // fillColor: Colors.grey[50],
-          fillColor: colorScheme.surface,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide.none,
-          ),
-          enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide(color: colorScheme.outline, width: 2),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide(color: colorScheme.outline, width: 3),
-          ),
-          errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide(color: colorScheme.error, width: 1),
-          ),
-          focusedErrorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide(color: colorScheme.error, width: 2),
-          ),
-          contentPadding:
-              const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
-        ),
-      );
+    useMaterial3: true,
+    brightness: colorScheme.brightness,
+    colorScheme: colorScheme,
+    // textTheme: textTheme.apply(
+    //   bodyColor: colorScheme.onSurface,
+    //   displayColor: colorScheme.onSurface,
+    // ),
+    scaffoldBackgroundColor: colorScheme.surface,
+    canvasColor: colorScheme.surface,
+    // fontFamily: GoogleFonts.cairo().fontFamily,
+    fontFamily: 'Cairo',
+    inputDecorationTheme: InputDecorationTheme(
+      filled: true,
+      // fillColor: Colors.grey[50],
+      fillColor: colorScheme.surface,
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide.none,
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: colorScheme.outline, width: 2),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: colorScheme.outline, width: 3),
+      ),
+      errorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: colorScheme.error, width: 1),
+      ),
+      focusedErrorBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(12),
+        borderSide: BorderSide(color: colorScheme.error, width: 2),
+      ),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 18),
+    ),
+  );
 
   ExtendedColors get extendedColors {
     if (isDark) {

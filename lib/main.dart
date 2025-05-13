@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ngpiteapp/app/app.dart';
-import 'package:ngpiteapp/core/binding/app_binding.dart';
+import '../app/app.dart';
+import '../core/binding/app_binding.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 

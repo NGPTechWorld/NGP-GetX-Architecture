@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ngpiteapp/screens/custom_widgets/wide_product_shimmer_card.dart';
+import '../../screens/custom_widgets/wide_product_shimmer_card.dart';
 
 class WideProductShimmerList extends StatelessWidget {
   const WideProductShimmerList({

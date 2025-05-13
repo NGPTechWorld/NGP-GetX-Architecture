@@ -1,4 +1,4 @@
-import 'package:ngpiteapp/screens/custom_widgets/snack_bar_error.dart';
+import '../../screens/custom_widgets/snack_bar_error.dart';
 
 import '../../app/config/color_manager.dart';
 import '../../app/config/style_manager.dart';

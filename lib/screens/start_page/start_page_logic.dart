@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:ngpiteapp/app/services/local_storage/cache_services_with_sharedpreferences.dart';
-import 'package:ngpiteapp/data/enums/app_state_enum.dart';
-import 'package:ngpiteapp/data/repositories/users_repositories.dart';
-import 'package:ngpiteapp/data/enums/loading_state_enum.dart';
+import '../../app/services/local_storage/cache_services_with_sharedpreferences.dart';
+import '../../data/enums/app_state_enum.dart';
+import '../../data/repositories/users_repositories.dart';
+import '../../data/enums/loading_state_enum.dart';
 
 class StartPageBinging extends Bindings {
   @override
@@ -18,8 +18,5 @@ class StartPageController extends GetxController {
   var loadingState = LoadingState.idle.obs;
   var appState = AppState.run.obs;
 
-  startApp() async {
-   
-  }
-
+  startApp() async {}
 }

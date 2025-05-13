@@ -1,11 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:ngpiteapp/app/services/api/api_interceptor.dart';
-import 'package:ngpiteapp/app/services/api/end_points.dart';
-import 'package:ngpiteapp/core/errors/error_handler.dart';
-import 'package:ngpiteapp/app/services/api/api_services.dart';
+import '/app/services/api/api_interceptor.dart';
+import '/app/services/api/end_points.dart';
+import '/core/errors/error_handler.dart';
+import '/app/services/api/api_services.dart';
 import 'package:get/get.dart' as getx;
-import 'package:ngpiteapp/app/services/local_storage/cache_services_with_sharedpreferences.dart';
+import '/app/services/local_storage/cache_services_with_sharedpreferences.dart';
 
 class DioConsumer implements ApiServices {
   final Dio dio;
@@ -52,7 +52,7 @@ class DioConsumer implements ApiServices {
         "Authorization": "Bearer $token",
       });
     }
-    
+
     if (uploadImage) {
       headers['Accept'] = 'text/plain';
       headers['Content-Type'] = 'multipart/form-data';

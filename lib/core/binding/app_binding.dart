@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:ngpiteapp/screens/start_page/start_page_logic.dart';
+import '/screens/start_page/start_page_logic.dart';
 import '/app/services/api/dio_consumer.dart';
 import '/app/services/connection/network_info.dart';
 import '../../app/services/local_storage/cache_services_with_sharedpreferences.dart';

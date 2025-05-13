@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ngpiteapp/app/config/color_manager.dart';
-import 'package:ngpiteapp/app/config/values_manager.dart';
-import 'package:ngpiteapp/screens/custom_widgets/shimmer_placeholder.dart';
+import '../../app/config/color_manager.dart';
+import '../../app/config/values_manager.dart';
+import '../../screens/custom_widgets/shimmer_placeholder.dart';
 
 class ShimmerProductCard extends StatelessWidget {
   @override

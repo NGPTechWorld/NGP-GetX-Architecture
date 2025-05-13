@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ngpiteapp/app/config/color_manager.dart';
-import 'package:ngpiteapp/app/config/values_manager.dart';
+import '../../app/config/color_manager.dart';
+import '../../app/config/values_manager.dart';
 
 class DefaultButtonInv extends StatelessWidget {
   const DefaultButtonInv(
@@ -9,7 +9,9 @@ class DefaultButtonInv extends StatelessWidget {
       required this.press,
       this.loading,
       required this.style,
-      this.minWidth = double.infinity, this.height = AppSize.s56, this.borderRadius = AppSize.s20});
+      this.minWidth = double.infinity,
+      this.height = AppSize.s56,
+      this.borderRadius = AppSize.s20});
   final double minWidth;
   final double borderRadius;
   final double height;
@@ -25,7 +27,7 @@ class DefaultButtonInv extends StatelessWidget {
       height: height,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(borderRadius)),
-      color:  ColorManager.whiteColor,
+      color: ColorManager.whiteColor,
       child: loading == true
           ? const CircularProgressIndicator(
               color: ColorManager.firstColor,

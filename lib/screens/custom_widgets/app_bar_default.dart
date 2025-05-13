@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ngpiteapp/app/config/color_manager.dart';
-import 'package:ngpiteapp/app/config/style_manager.dart';
+import '../../app/config/color_manager.dart';
+import '../../app/config/style_manager.dart';
 
 class AppBarDefault extends StatelessWidget implements PreferredSizeWidget {
   final title;

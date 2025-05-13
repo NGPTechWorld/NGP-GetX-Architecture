@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ngpiteapp/app/config/color_manager.dart';
-import 'package:ngpiteapp/app/config/values_manager.dart';
+import '/app/config/color_manager.dart';
+import '/app/config/values_manager.dart';
 
 class StyleManager {
   // Heading 01

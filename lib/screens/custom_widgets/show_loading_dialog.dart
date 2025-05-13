@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ngpiteapp/app/config/color_manager.dart';
-import 'package:ngpiteapp/app/config/string_manager.dart';
-import 'package:ngpiteapp/app/config/style_manager.dart';
+import '../../app/config/color_manager.dart';
+import '../../app/config/string_manager.dart';
+import '../../app/config/style_manager.dart';
 import 'package:get/get.dart';
 
 void showLoadingDialog(BuildContext context) {

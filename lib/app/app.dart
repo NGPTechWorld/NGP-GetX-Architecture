@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:ngpiteapp/app/config/theme_manager.dart';
-import 'package:ngpiteapp/app/config/translation_app.dart';
-import 'package:ngpiteapp/app/config/values_manager.dart';
-import 'package:ngpiteapp/screens/start_page/start_page.dart';
-import 'package:ngpiteapp/screens/start_page/start_page_logic.dart';
+import '../app/config/theme_manager.dart';
+import '../app/config/translation_app.dart';
+import '../screens/start_page/start_page_logic.dart';
+import '../app/config/values_manager.dart';
+import '../screens/start_page/start_page.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -16,7 +16,7 @@ class App extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       home: StartPage(),
-      theme: ThemeManager.appTheme,
+      theme: ThemeManager().light(),
       initialBinding: StartPageBinging(),
       locale: Locale("en"),
       translations: TranslationApp(),

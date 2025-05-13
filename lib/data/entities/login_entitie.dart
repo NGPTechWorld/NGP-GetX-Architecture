@@ -1,4 +1,4 @@
-import 'package:ngpiteapp/app/services/api/end_points.dart';
+import '/app/services/api/end_points.dart';
 
 class LoginEntitie {
   final String message;

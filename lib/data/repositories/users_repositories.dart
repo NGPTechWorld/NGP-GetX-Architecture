@@ -3,13 +3,13 @@ import 'dart:convert';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart' as Get;
-import 'package:ngpiteapp/app/services/local_storage/cache_services_with_sharedpreferences.dart';
-import 'package:ngpiteapp/core/errors/error_handler.dart';
-import 'package:ngpiteapp/app/services/api/api_response_model.dart';
-import 'package:ngpiteapp/app/services/api/api_services.dart';
-import 'package:ngpiteapp/app/services/api/dio_consumer.dart';
-import 'package:ngpiteapp/app/services/api/end_points.dart';
-import 'package:ngpiteapp/data/entities/login_entitie.dart';
+import '/app/services/local_storage/cache_services_with_sharedpreferences.dart';
+import '/core/errors/error_handler.dart';
+import '/app/services/api/api_response_model.dart';
+import '/app/services/api/api_services.dart';
+import '/app/services/api/dio_consumer.dart';
+import '/app/services/api/end_points.dart';
+import '/data/entities/login_entitie.dart';
 
 abstract class UsersRepositories {
   Future<AppResponse> register(
@@ -165,13 +165,12 @@ class ImpUsersRepositories implements UsersRepositories {
     return response;
   }
 
-
   @override
   Future<AppResponse> getImage() async {
     AppResponse response = AppResponse(success: false);
     try {
       response.data = await api.request(
-        url:" EndPoints.getImage",
+        url: " EndPoints.getImage",
         method: Method.get,
         requiredToken: true,
       );
@@ -198,13 +197,13 @@ class ImpUsersRepositories implements UsersRepositories {
     AppResponse response = AppResponse(success: false);
     try {
       response.data = await api.request(
-          url:" EndPoints.resetPassword",
+          url: " EndPoints.resetPassword",
           method: Method.put,
           requiredToken: true,
           params: {
-           " ApiKey.old_password": old_password,
-           " ApiKey.new_password": new_password,
-           " ApiKey.new_password_confirmation": new_password_confirmation,
+            " ApiKey.old_password": old_password,
+            " ApiKey.new_password": new_password,
+            " ApiKey.new_password_confirmation": new_password_confirmation,
           });
       final data = jsonDecode(response.data.toString()) as Map<String, dynamic>;
       response.data = data[ApiKey.message];
@@ -265,7 +264,7 @@ class ImpUsersRepositories implements UsersRepositories {
     AppResponse response = AppResponse(success: false);
     try {
       response.data = await api.request(
-          url: EndPoints.baserUrl +" EndPoints.verifyNewPassword",
+          url: EndPoints.baserUrl + " EndPoints.verifyNewPassword",
           method: Method.post,
           requiredToken: true,
           params: {
@@ -335,15 +334,18 @@ class ImpUsersRepositories implements UsersRepositories {
     }
     return response;
   }
-  
+
   @override
   Future<AppResponse> deleteImage() {
     // TODO: implement deleteImage
     throw UnimplementedError();
   }
-  
+
   @override
-  Future<AppResponse> editUser({required String first_name, required String last_name, required String email}) {
+  Future<AppResponse> editUser(
+      {required String first_name,
+      required String last_name,
+      required String email}) {
     // TODO: implement editUser
     throw UnimplementedError();
   }

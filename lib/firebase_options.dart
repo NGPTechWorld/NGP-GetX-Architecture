@@ -8,8 +8,8 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart'
     show TargetPlatform, debugPrint, defaultTargetPlatform, kIsWeb;
 import 'package:get/get.dart';
-import 'package:ngpiteapp/app/services/local_storage/cache_services.dart';
-import 'package:ngpiteapp/app/services/local_storage/cache_services_with_sharedpreferences.dart';
+import '../app/services/local_storage/cache_services.dart';
+import '../app/services/local_storage/cache_services_with_sharedpreferences.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///

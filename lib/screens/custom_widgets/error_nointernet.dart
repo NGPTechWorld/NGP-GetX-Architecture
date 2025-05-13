@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ngpiteapp/app/config/color_manager.dart';
-import 'package:ngpiteapp/app/config/string_manager.dart';
-import 'package:ngpiteapp/app/config/style_manager.dart';
-import 'package:ngpiteapp/app/config/values_manager.dart';
+import '../../app/config/color_manager.dart';
+import '../../app/config/string_manager.dart';
+import '../../app/config/style_manager.dart';
+import '../../app/config/values_manager.dart';
 
 class ErrorNointernet extends StatelessWidget {
   final controller;

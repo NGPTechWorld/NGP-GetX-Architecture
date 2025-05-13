@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:ngpiteapp/app/services/local_storage/cache_services.dart';
+import '/app/services/local_storage/cache_services.dart';
 
 class CacheServiceGetStorage implements CacheServices {
   late GetStorage _getStorage;
